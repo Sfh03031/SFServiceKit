@@ -9,7 +9,7 @@
 
 Some tool class collections (zh: 工具类集合)
 
-[[SFBackgroundTaskManager](https://github.com/Sfh03031/SFBackgroundTaskManager)]，后台保活
+[SFBackgroundTaskManager，后台保活工具类，可自定义时长。](https://github.com/Sfh03031/SFBackgroundTaskManager)
 
 
 ## Example
@@ -28,7 +28,7 @@ SFServiceKit is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'SFServiceKit'
+pod 'SFServiceKit', :git => 'https://github.com/Sfh03031/SFServiceKit.git'
 ```
 
 ## Author
