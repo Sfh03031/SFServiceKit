@@ -30,12 +30,12 @@ public enum BeaconCallbackType {
 
 @objcMembers
 public class SFIBeaconManager: NSObject {
-    public typealias callback = (BeaconCallbackType) -> Void
-
+    
     public static let shared = SFIBeaconManager()
-
+    
+    public typealias callback = (BeaconCallbackType) -> Void
+    
     private var beaconCallback: callback?
-
     private var rangingRegions: [CLBeaconRegion] = []
     private var willRangingRegion: CLBeaconRegion?
 
@@ -48,7 +48,13 @@ public class SFIBeaconManager: NSObject {
 }
 
 public extension SFIBeaconManager {
+    
     /// 开始监听
+    /// - Parameters:
+    ///   - uuid: 公司或组织标识
+    ///   - major: 用来识别一组相关联的 beacon
+    ///   - minor: 用来区分某个特定的 beacon
+    ///   - then: 回调
     func startRangingWith(uuid: String, major: UInt16? = nil, minor: UInt16? = nil, then: callback?) {
         guard let uid = UUID(uuidString: uuid) else {
             then?(.failure(msg: "UUID不正确"))
@@ -177,7 +183,7 @@ extension SFIBeaconManager: CLLocationManagerDelegate {
 
     ///  监控成功
     public func locationManager(_ manager: CLLocationManager, didStartMonitoringFor region: CLRegion) {
-        print("监控成功")
+        print("开始监控...")
     }
 
     ///  监控失败

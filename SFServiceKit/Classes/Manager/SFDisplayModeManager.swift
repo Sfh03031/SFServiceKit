@@ -9,6 +9,9 @@ import UIKit
 
 @available(iOS 13.0, *)
 public class SFDisplayModeManager: NSObject {
+    
+    public static let shared = SFDisplayModeManager()
+    
     /// 当前模式
     public var currentMode: SFDisplayMode {
         guard let style = SFService.WINDOW?.overrideUserInterfaceStyle else { return .flowSystem(.light) }
@@ -19,8 +22,6 @@ public class SFDisplayModeManager: NSObject {
     }
     
     private static let kDisplayModeKey = "kDisplayModeKey"
-    
-    public static let shared = SFDisplayModeManager()
     
     override private init() {
         super.init()

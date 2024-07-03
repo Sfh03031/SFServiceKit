@@ -13,7 +13,6 @@ public class SFSymbolManager: NSObject {
 
     public static let shared = SFSymbolManager()
     
-    
     /// 获取SFSymbol图片
     /// - Parameters:
     ///   - name: Symbol名称

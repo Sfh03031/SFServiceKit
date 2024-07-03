@@ -9,9 +9,10 @@ import UIKit
 
 @objcMembers
 public class SFLanguageManager: NSObject {
-    private static let kAppleLanguages = "AppleLanguages"
-     
+    
     public static let shared = SFLanguageManager()
+    
+    private static let kAppleLanguages = "AppleLanguages"
      
     override private init() {
         super.init()

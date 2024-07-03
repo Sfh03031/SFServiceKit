@@ -12,7 +12,6 @@ public class SFFileManager: NSObject {
 
     public static let shared = SFFileManager()
     
-    
     /// 获取缓存大小 "/Library" + "/Caches" + "/tmp"
     /// - Returns: 缓存大小，单位M
     public func totalCacheSize() -> String {

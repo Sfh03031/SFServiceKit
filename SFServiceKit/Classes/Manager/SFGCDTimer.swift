@@ -8,6 +8,8 @@
 import UIKit
 
 /**
+ 优势：DispatchSourceTimer不依赖Runloop，Runloop底层代码中也用到了DispatchSourceTimer。
+ 
  注意事项:
     1.当Timer创建完后，建议调用activate()方法开始运行。如果直接调用resume()也可以开始运行。
     2.suspend()的时候，并不会停止当前正在执行的event事件，而是会停止下一次event事件。
