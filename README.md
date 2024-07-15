@@ -43,7 +43,44 @@ SFServiceKit is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
+pod 'SFServiceKit'
+```
+
+If you want to use the latest features of SFServiceKit use normal external source dependencies.
+
+```ruby
 pod 'SFServiceKit', :git => 'https://github.com/Sfh03031/SFServiceKit.git'
+```
+
+SFServiceKit has created sub libraries, you can use them like this: 
+
+```ruby
+# 后台保活，可自定义时长
+pod 'SFServiceKit/SFBackgroundTaskManager'
+
+# 显示模式
+pod 'SFServiceKit/SFDisplayModeManager'
+
+# 身份认证
+pod 'SFServiceKit/SFFaceIDWithTouchIDManager'
+
+# 文件管理
+pod 'SFServiceKit/SFFileManager'
+
+# GCD计时器
+pod 'SFServiceKit/SFGCDTimer'
+
+# 区域监测
+pod 'SFServiceKit/SFIBeaconManager'
+
+# 语言管理
+pod 'SFServiceKit/SFLanguageManager'
+
+# 位置定位
+pod 'SFServiceKit/SFLocationManager'
+
+# 加载SF Symbol图标
+pod 'SFServiceKit/SFSymbolManager'
 ```
 
 ## Author
