@@ -31,15 +31,15 @@ public class SFBackgroundTaskManager: NSObject {
     
     public static let shared = SFBackgroundTaskManager.init()
     
-    var audioPlayer: AVAudioPlayer!
-    var bgTask: UIBackgroundTaskIdentifier!
+    private var audioPlayer: AVAudioPlayer!
+    private var bgTask: UIBackgroundTaskIdentifier!
     
     /// 累积保活时长
-    var seconds: Int = 0
+    private var seconds: Int = 0
     /// 在多长时间段内保活，默认为2小时
-    var limit: Int = 2
+    private var limit: Int = 2
     /// 计时器，计算时长
-    var taskTimer: Timer?
+    private var taskTimer: Timer?
     
     public override init() {
         super.init()
@@ -90,9 +90,9 @@ public class SFBackgroundTaskManager: NSObject {
         print("UIApplication.shared.backgroundTimeRemaining: \(UIApplication.shared.backgroundTimeRemaining)")
 #endif
         self.bgTask = UIApplication.shared.beginBackgroundTask(expirationHandler: {
-            if self.bgTask != UIBackgroundTaskInvalid {
+            if self.bgTask != UIBackgroundTaskIdentifier.invalid {
                 UIApplication.shared.endBackgroundTask(self.bgTask)
-                self.bgTask = UIBackgroundTaskInvalid
+                self.bgTask = UIBackgroundTaskIdentifier.invalid
             }
             self.start()
         })
@@ -102,16 +102,20 @@ public class SFBackgroundTaskManager: NSObject {
     fileprivate func setupAudioSession() {
         let audioSession = AVAudioSession.sharedInstance()
         do {
-            try audioSession.setCategory(AVAudioSessionCategoryPlayback, with: AVAudioSessionCategoryOptions.mixWithOthers)
+            try audioSession.setCategory(AVAudioSession.Category.playback, options: AVAudioSession.CategoryOptions.mixWithOthers)
         } catch let error as NSError {
+#if DEBUG
             print("Error setCategory AVAudioSession: \(error.debugDescription)")
+#endif
         }
         
         do {
             // 如果一个前台app正在播放音频则可能会启动失败
             try audioSession.setActive(true)
         } catch let error as NSError {
+#if DEBUG
             print("Error activating AVAudioSession: \(error.debugDescription)")
+#endif
         }
     }
     

@@ -24,9 +24,9 @@ public final class SFLocationManager: NSObject {
     
     public static let shared = SFLocationManager()
     
-    #if canImport(RxCocoa)
+#if canImport(RxCocoa)
     public let locationSubject = BehaviorRelay<Location?>(value: nil)
-    #endif
+#endif
     
     /// 完成回调
     public var complete: ((Location?) -> Void)?
@@ -89,9 +89,9 @@ public extension SFLocationManager {
 extension SFLocationManager: CLLocationManagerDelegate {
     
     public func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        #if canImport(RxCocoa)
+#if canImport(RxCocoa)
         locationSubject.accept(nil)
-        #endif
+#endif
         complete?(nil)
     }
     
@@ -103,9 +103,9 @@ extension SFLocationManager: CLLocationManagerDelegate {
         if let oldLocation = curLocation {
             let distance = newLocation.distance(from: oldLocation.location)
             if distance < minMeter {
-                #if canImport(RxCocoa)
+#if canImport(RxCocoa)
                 locationSubject.accept(lt)
-                #endif
+#endif
                 complete?(lt)
                 return
             }
@@ -115,9 +115,9 @@ extension SFLocationManager: CLLocationManagerDelegate {
             DispatchQueue.global().sync { [weak self] in
                 guard let `self` = self else { return }
                 if error != nil {
-                    #if canImport(RxCocoa)
+#if canImport(RxCocoa)
                     self.locationSubject.accept(nil)
-                    #endif
+#endif
                     self.complete?(nil)
                 } else {
                     if !self.continued { self.stop() }
@@ -125,9 +125,9 @@ extension SFLocationManager: CLLocationManagerDelegate {
                         if let firstPlacemark = placemarks.first {
                             lt.placemark = firstPlacemark
                             self.curLocation = lt
-                            #if canImport(RxCocoa)
+#if canImport(RxCocoa)
                             self.locationSubject.accept(lt)
-                            #endif
+#endif
                             self.complete?(lt)
                         }
                     }

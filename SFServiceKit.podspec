@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SFServiceKit'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A short description of SFServiceKit.'
 
 # This description is used to generate tags and improve search results.
@@ -24,17 +24,19 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/Sfh03031/SFServiceKit'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Sfh03031' => 'sfhery@foxmail.com' }
+  s.author           = { 'Sfh03031' => 'sfh894645252@163.com' }
   s.source           = { :git => 'https://github.com/Sfh03031/SFServiceKit.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
+  s.swift_versions = '5'
   s.ios.deployment_target = '10.0'
 
   s.source_files = 'SFServiceKit/Classes/**/*'
   
   s.resource_bundles = {
-    'SFServiceKit' => ['SFServiceKit/Assets/**/*']
+    'SFServiceKit' => ['SFServiceKit/Assets/SFBackgroundTaskManager/*.wav']
   }
+  s.static_framework = true
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit', 'Foundation', 'MapKit', 'LocalAuthentication', 'CoreLocation', 'AVFoundation'

@@ -49,7 +49,7 @@ public class SFGCDTimer: NSObject {
 //            }
 //        }
         
-        let ktimer = DispatchSource.makeTimerSource(flags: [], queue: self.queue)
+        let ktimer = DispatchSource.makeTimerSource(flags: [], queue: queue)
         ktimer.schedule(deadline: .now() + delay, repeating: repeating, leeway: .nanoseconds(1))
         ktimer.setEventHandler { [weak self] in
             DispatchQueue.main.async {
@@ -67,6 +67,7 @@ public class SFGCDTimer: NSObject {
     private var repeating: DispatchTimeInterval
     /// 执行的任务回调
     private var handler: () -> Void
+    
     /// 计时器是否正在运行
     private var isRunning: Bool = false
     
