@@ -7,7 +7,7 @@
 
 ## Introduction
 
-Some tool class collections (zh: 一些工具类集合)
+Some collections of tool classes (zh: 一些工具类集合: 后台保活/显示模式/身份认证/文件管理/GCD计时器/区域监测/语言管理/位置定位/加载SFSymbol图标)
 
 ## Example
 
