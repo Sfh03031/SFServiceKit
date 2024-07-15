@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SFServiceKit'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'A short description of SFServiceKit.'
 
 # This description is used to generate tags and improve search results.
@@ -33,12 +33,54 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'SFServiceKit/Classes/**/*'
   
-  s.resource_bundles = {
-    'SFServiceKit' => ['SFServiceKit/Assets/SFBackgroundTaskManager/*.wav']
-  }
+#  s.resource_bundles = {
+#    'SFServiceKit' => ['SFServiceKit/Assets/SFBackgroundTaskManager/*.wav']
+#  }
   s.static_framework = true
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit', 'Foundation', 'MapKit', 'LocalAuthentication', 'CoreLocation', 'AVFoundation'
   # s.dependency 'AFNetworking', '~> 2.3'
+  
+  s.subspec 'SFBackgroundTaskManager' do |ss|
+      ss.source_files = 'SFServiceKit/Classes/SFBackgroundTaskManager/*'
+      ss.resource_bundles = {
+        'SFBackgroundTaskManager' => ['SFServiceKit/Assets/SFBackgroundTaskManager/*.wav']
+      }
+  end
+  
+  s.subspec 'SFDisplayModeManager' do |ss|
+      ss.source_files = 'SFServiceKit/Classes/SFDisplayModeManager/*'
+  end
+  
+  s.subspec 'SFFaceIDWithTouchIDManager' do |ss|
+      ss.source_files = 'SFServiceKit/Classes/SFFaceIDWithTouchIDManager/*'
+  end
+  
+  s.subspec 'SFFileManager' do |ss|
+      ss.source_files = 'SFServiceKit/Classes/SFFileManager/*'
+  end
+  
+  s.subspec 'SFGCDTimer' do |ss|
+      ss.source_files = 'SFServiceKit/Classes/SFGCDTimer/*'
+  end
+  
+  s.subspec 'SFIBeaconManager' do |ss|
+      ss.source_files = 'SFServiceKit/Classes/SFIBeaconManager/*'
+  end
+  
+  s.subspec 'SFLanguageManager' do |ss|
+      ss.source_files = 'SFServiceKit/Classes/SFLanguageManager/*'
+  end
+  
+  s.subspec 'SFLocationManager' do |ss|
+      ss.source_files = 'SFServiceKit/Classes/SFLocationManager/*'
+  end
+  
+  s.subspec 'SFSymbolManager' do |ss|
+      ss.source_files = 'SFServiceKit/Classes/SFSymbolManager/*'
+  end
+  
+  
+  
 end

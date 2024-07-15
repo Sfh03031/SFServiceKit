@@ -4,7 +4,25 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - SFServiceKit (0.1.0)
+  - SFServiceKit (0.1.1):
+    - SFServiceKit/SFBackgroundTaskManager (= 0.1.1)
+    - SFServiceKit/SFDisplayModeManager (= 0.1.1)
+    - SFServiceKit/SFFaceIDWithTouchIDManager (= 0.1.1)
+    - SFServiceKit/SFFileManager (= 0.1.1)
+    - SFServiceKit/SFGCDTimer (= 0.1.1)
+    - SFServiceKit/SFIBeaconManager (= 0.1.1)
+    - SFServiceKit/SFLanguageManager (= 0.1.1)
+    - SFServiceKit/SFLocationManager (= 0.1.1)
+    - SFServiceKit/SFSymbolManager (= 0.1.1)
+  - SFServiceKit/SFBackgroundTaskManager (0.1.1)
+  - SFServiceKit/SFDisplayModeManager (0.1.1)
+  - SFServiceKit/SFFaceIDWithTouchIDManager (0.1.1)
+  - SFServiceKit/SFFileManager (0.1.1)
+  - SFServiceKit/SFGCDTimer (0.1.1)
+  - SFServiceKit/SFIBeaconManager (0.1.1)
+  - SFServiceKit/SFLanguageManager (0.1.1)
+  - SFServiceKit/SFLocationManager (0.1.1)
+  - SFServiceKit/SFSymbolManager (0.1.1)
 
 DEPENDENCIES:
   - FBSnapshotTestCase (~> 2.1.4)
@@ -20,7 +38,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  SFServiceKit: 080e3cd8aa5b669c7310c782e34bbc334362c840
+  SFServiceKit: 3e1f6c29b71b30f409b07b52f39a8b43f6df980c
 
 PODFILE CHECKSUM: 28e8006c916709af5558b75ba327744a83fa69b1
 

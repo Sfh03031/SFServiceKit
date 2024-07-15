@@ -12,9 +12,23 @@ public class SFDisplayModeManager: NSObject {
     
     public static let shared = SFDisplayModeManager()
     
+    private var WINDOW: UIWindow? {
+        if #available(iOS 13.0, *) {
+            if let window = UIApplication.shared.delegate?.window {
+                return window
+            } else {
+                let sence = UIApplication.shared.connectedScenes.first(where: { $0.activationState == .foregroundActive }) as? UIWindowScene
+                let window = sence?.windows.first(where: { $0.isKeyWindow })
+                return window
+            }
+        } else {
+            return UIApplication.shared.keyWindow
+        }
+    }
+    
     /// 当前模式
     public var currentMode: SFDisplayMode {
-        guard let style = SFService.WINDOW?.overrideUserInterfaceStyle else { return .flowSystem(.light) }
+        guard let style = WINDOW?.overrideUserInterfaceStyle else { return .flowSystem(.light) }
         if style == .unspecified {
             return .flowSystem(SFDisplayMode.makeMode(UITraitCollection.current.userInterfaceStyle.rawValue))
         }
@@ -40,7 +54,7 @@ public class SFDisplayModeManager: NSObject {
         default:
             UserDefaults.standard.setValue(model.rawValue, forKey: Self.kDisplayModeKey)
         }
-        SFService.WINDOW?.overrideUserInterfaceStyle = realMode.userInterfaceStyle
+        WINDOW?.overrideUserInterfaceStyle = realMode.userInterfaceStyle
     }
 }
 
