@@ -121,7 +121,7 @@ public class SFBackgroundTaskManager: NSObject {
     
     /// 配置AVAudioPlayer
     fileprivate func setupAudioPlayer() {
-        let bundlePath = Bundle(for: self.classForCoder).path(forResource: "SFServiceKit", ofType: "bundle")
+        let bundlePath = Bundle(for: self.classForCoder).path(forResource: "SFBackgroundTaskManager", ofType: "bundle")
         let bundle = Bundle(path: bundlePath ?? "")
         let filePath = bundle?.path(forResource: "Silence", ofType: "wav")
         let fileUrl = URL.init(fileURLWithPath: filePath ?? "")
