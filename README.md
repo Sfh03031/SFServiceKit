@@ -38,7 +38,7 @@ If you want to use the latest features of SFServiceKit use normal external sourc
 pod 'SFServiceKit', :git => 'https://github.com/Sfh03031/SFServiceKit.git'
 ```
 
-SFServiceKit has created sub libraries, you can use them like this: 
+SFServiceKit has created sub libraries, if you only want to use one of them, simply add the following line to your Podfile: 
 
 ```ruby
 # 后台保活，可自定义时长
@@ -67,6 +67,12 @@ pod 'SFServiceKit/SFLocationManager'
 
 # 加载SF Symbol图标
 pod 'SFServiceKit/SFSymbolManager'
+```
+
+or use subspecs, simply add the following line to your Podfile:
+
+```swift
+pod 'SFServiceKit', :subspecs => ['SFBackgroundTaskManager', 'SFDisplayModeManager']
 ```
 
 ## Author
