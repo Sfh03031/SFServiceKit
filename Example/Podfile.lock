@@ -4,25 +4,25 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - SFServiceKit (0.1.1):
-    - SFServiceKit/SFBackgroundTaskManager (= 0.1.1)
-    - SFServiceKit/SFDisplayModeManager (= 0.1.1)
-    - SFServiceKit/SFFaceIDWithTouchIDManager (= 0.1.1)
-    - SFServiceKit/SFFileManager (= 0.1.1)
-    - SFServiceKit/SFGCDTimer (= 0.1.1)
-    - SFServiceKit/SFIBeaconManager (= 0.1.1)
-    - SFServiceKit/SFLanguageManager (= 0.1.1)
-    - SFServiceKit/SFLocationManager (= 0.1.1)
-    - SFServiceKit/SFSymbolManager (= 0.1.1)
-  - SFServiceKit/SFBackgroundTaskManager (0.1.1)
-  - SFServiceKit/SFDisplayModeManager (0.1.1)
-  - SFServiceKit/SFFaceIDWithTouchIDManager (0.1.1)
-  - SFServiceKit/SFFileManager (0.1.1)
-  - SFServiceKit/SFGCDTimer (0.1.1)
-  - SFServiceKit/SFIBeaconManager (0.1.1)
-  - SFServiceKit/SFLanguageManager (0.1.1)
-  - SFServiceKit/SFLocationManager (0.1.1)
-  - SFServiceKit/SFSymbolManager (0.1.1)
+  - SFServiceKit (0.1.3):
+    - SFServiceKit/SFAuthenticationManager (= 0.1.3)
+    - SFServiceKit/SFBackgroundTaskManager (= 0.1.3)
+    - SFServiceKit/SFDisplayModeManager (= 0.1.3)
+    - SFServiceKit/SFFileManager (= 0.1.3)
+    - SFServiceKit/SFGCDTimer (= 0.1.3)
+    - SFServiceKit/SFIBeaconManager (= 0.1.3)
+    - SFServiceKit/SFLanguageManager (= 0.1.3)
+    - SFServiceKit/SFLocationManager (= 0.1.3)
+    - SFServiceKit/SFSymbolManager (= 0.1.3)
+  - SFServiceKit/SFAuthenticationManager (0.1.3)
+  - SFServiceKit/SFBackgroundTaskManager (0.1.3)
+  - SFServiceKit/SFDisplayModeManager (0.1.3)
+  - SFServiceKit/SFFileManager (0.1.3)
+  - SFServiceKit/SFGCDTimer (0.1.3)
+  - SFServiceKit/SFIBeaconManager (0.1.3)
+  - SFServiceKit/SFLanguageManager (0.1.3)
+  - SFServiceKit/SFLocationManager (0.1.3)
+  - SFServiceKit/SFSymbolManager (0.1.3)
 
 DEPENDENCIES:
   - FBSnapshotTestCase (~> 2.1.4)
@@ -38,7 +38,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  SFServiceKit: 3e1f6c29b71b30f409b07b52f39a8b43f6df980c
+  SFServiceKit: 252332d2d531253e29cf11a79eeff974d32cd1f0
 
 PODFILE CHECKSUM: 28e8006c916709af5558b75ba327744a83fa69b1
 

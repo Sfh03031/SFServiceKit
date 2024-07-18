@@ -47,7 +47,7 @@ class ViewController: UIViewController {
         
         print("SFFileManager.shared.totalCacheSize: \(SFFileManager.shared.totalCacheSize())")
         
-        SFFaceIDWithTouchIDManager.shared.evaluate(canPassword: true) { iscan, error in
+        SFAuthenticationManager.shared.evaluate(canPassword: true) { iscan, error in
             print("iscan: \(iscan)")
             if iscan {
                 print("验证通过...")

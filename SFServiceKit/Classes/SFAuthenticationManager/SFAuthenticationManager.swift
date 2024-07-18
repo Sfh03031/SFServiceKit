@@ -1,5 +1,5 @@
 //
-//  SFFaceIDWithTouchIDManager.swift
+//  SFAuthenticationManager.swift
 //  SFKit
 //
 //  Created by sfh on 2023/12/2.
@@ -35,9 +35,9 @@ import UIKit
  */
 
 @objcMembers
-public class SFFaceIDWithTouchIDManager: NSObject {
+public class SFAuthenticationManager: NSObject {
     
-    public static let shared = SFFaceIDWithTouchIDManager()
+    public static let shared = SFAuthenticationManager()
     
     private lazy var context: LAContext = {
         let context = LAContext()

@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SFServiceKit'
-  s.version          = '0.1.3'
-  s.summary          = 'A short description of SFServiceKit.'
+  s.version          = '0.1.4'
+  s.summary          = 'Some collections of tool classes (zh: 一些工具类集合).'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  Some collections of tool classes (zh: 一些工具类集合: 后台保活/显示模式/身份验证/文件管理/GCD计时器/区域监测/语言管理/位置定位/加载SFSymbol图标).
                        DESC
 
   s.homepage         = 'https://github.com/Sfh03031/SFServiceKit'
@@ -53,8 +53,8 @@ TODO: Add long description of the pod here.
       ss.source_files = 'SFServiceKit/Classes/SFDisplayModeManager/*'
   end
   
-  s.subspec 'SFFaceIDWithTouchIDManager' do |ss|
-      ss.source_files = 'SFServiceKit/Classes/SFFaceIDWithTouchIDManager/*'
+  s.subspec 'SFAuthenticationManager' do |ss|
+      ss.source_files = 'SFServiceKit/Classes/SFAuthenticationManager/*'
   end
   
   s.subspec 'SFFileManager' do |ss|
