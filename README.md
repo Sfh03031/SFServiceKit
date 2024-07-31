@@ -42,38 +42,52 @@ SFServiceKit has created sub libraries, if you only want to use one of them, sim
 
 ```ruby
 # 后台保活，可自定义时长
-pod 'SFServiceKit/SFBackgroundTaskManager'
+pod 'SFServiceKit/Bgtask'
 
 # 显示模式
-pod 'SFServiceKit/SFDisplayModeManager'
+pod 'SFServiceKit/Display'
 
 # 身份验证
-pod 'SFServiceKit/SFAuthenticationManager'
+pod 'SFServiceKit/Author'
 
 # 文件管理
-pod 'SFServiceKit/SFFileManager'
+pod 'SFServiceKit/File'
 
 # GCD计时器
-pod 'SFServiceKit/SFGCDTimer'
+pod 'SFServiceKit/Timer'
 
 # 区域监测
-pod 'SFServiceKit/SFIBeaconManager'
+pod 'SFServiceKit/IBeacon'
 
 # 语言管理
-pod 'SFServiceKit/SFLanguageManager'
+pod 'SFServiceKit/Language'
 
 # 位置定位
-pod 'SFServiceKit/SFLocationManager'
+pod 'SFServiceKit/Location'
 
 # 加载SF Symbol图标
-pod 'SFServiceKit/SFSymbolManager'
+pod 'SFServiceKit/Symbol'
 ```
 
 or use subspecs, simply add the following line to your Podfile:
 
 ```swift
-pod 'SFServiceKit', :subspecs => ['SFBackgroundTaskManager', 'SFDisplayModeManager']
+pod 'SFServiceKit', :subspecs => ['Bgtask', 'Display', 'Author', 'File', 'Timer', 'IBeacon', 'Language', 'Location', 'Symbol']
 ```
+
+## Change log
+
+2024.07.31, 0.1.5
+- update podspec and optimized the subspecs(zh: 优化配置子库)
+
+2024.07.18, 0.1.4
+- code optimize(zh: 代码优化)
+
+2024.07.16, 0.1.2、0.1.3
+- update readme and fix bug(zh: 更新readme、修改bug)
+    
+2024.07.15, 0.1.1
+- Initial version(zh: 初始版本)
 
 ## Author
 

@@ -1,8 +1,8 @@
 {
   "name": "SFServiceKit",
-  "version": "0.1.3",
-  "summary": "A short description of SFServiceKit.",
-  "description": "TODO: Add long description of the pod here.",
+  "version": "0.1.5",
+  "summary": "Some collections of tool classes (zh: 一些工具类集合).",
+  "description": "Some collections of tool classes (zh: 一些工具类集合: 后台保活/显示模式/身份验证/文件管理/GCD计时器/区域监测/语言管理/位置定位/加载SFSymbol图标).",
   "homepage": "https://github.com/Sfh03031/SFServiceKit",
   "license": {
     "type": "MIT",
@@ -13,13 +13,12 @@
   },
   "source": {
     "git": "https://github.com/Sfh03031/SFServiceKit.git",
-    "tag": "0.1.3"
+    "tag": "0.1.5"
   },
-  "swift_versions": "5",
+  "swift_versions": "5.0",
   "platforms": {
     "ios": "10.0"
   },
-  "source_files": "SFServiceKit/Classes/**/*",
   "static_framework": true,
   "frameworks": [
     "UIKit",
@@ -29,48 +28,81 @@
     "CoreLocation",
     "AVFoundation"
   ],
+  "default_subspecs": "Full",
   "subspecs": [
     {
-      "name": "SFBackgroundTaskManager",
+      "name": "Bgtask",
       "source_files": "SFServiceKit/Classes/SFBackgroundTaskManager/*",
       "resource_bundles": {
-        "SFBackgroundTaskManager": [
+        "Bgtask": [
           "SFServiceKit/Assets/SFBackgroundTaskManager/*.wav"
         ]
       }
     },
     {
-      "name": "SFDisplayModeManager",
+      "name": "Display",
       "source_files": "SFServiceKit/Classes/SFDisplayModeManager/*"
     },
     {
-      "name": "SFAuthenticationManager",
+      "name": "Author",
       "source_files": "SFServiceKit/Classes/SFAuthenticationManager/*"
     },
     {
-      "name": "SFFileManager",
+      "name": "File",
       "source_files": "SFServiceKit/Classes/SFFileManager/*"
     },
     {
-      "name": "SFGCDTimer",
+      "name": "Timer",
       "source_files": "SFServiceKit/Classes/SFGCDTimer/*"
     },
     {
-      "name": "SFIBeaconManager",
+      "name": "IBeacon",
       "source_files": "SFServiceKit/Classes/SFIBeaconManager/*"
     },
     {
-      "name": "SFLanguageManager",
+      "name": "Language",
       "source_files": "SFServiceKit/Classes/SFLanguageManager/*"
     },
     {
-      "name": "SFLocationManager",
+      "name": "Location",
       "source_files": "SFServiceKit/Classes/SFLocationManager/*"
     },
     {
-      "name": "SFSymbolManager",
+      "name": "Symbol",
       "source_files": "SFServiceKit/Classes/SFSymbolManager/*"
+    },
+    {
+      "name": "Full",
+      "dependencies": {
+        "SFServiceKit/Bgtask": [
+
+        ],
+        "SFServiceKit/Display": [
+
+        ],
+        "SFServiceKit/Author": [
+
+        ],
+        "SFServiceKit/File": [
+
+        ],
+        "SFServiceKit/Timer": [
+
+        ],
+        "SFServiceKit/IBeacon": [
+
+        ],
+        "SFServiceKit/Language": [
+
+        ],
+        "SFServiceKit/Location": [
+
+        ],
+        "SFServiceKit/Symbol": [
+
+        ]
+      }
     }
   ],
-  "swift_version": "5"
+  "swift_version": "5.0"
 }
