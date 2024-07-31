@@ -30,6 +30,10 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'SFServiceKit'
+
+or
+
+pod 'SFServiceKit', :subspecs => ['Full']
 ```
 
 If you want to use the latest features of SFServiceKit use normal external source dependencies.
