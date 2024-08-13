@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SFServiceKit'
-  s.version          = '0.1.5'
+  s.version          = '0.1.6'
   s.summary          = 'Some collections of tool classes (zh: 一些工具类集合).'
   s.description      = <<-DESC
   Some collections of tool classes (zh: 一些工具类集合: 后台保活/显示模式/身份验证/文件管理/GCD计时器/区域监测/语言管理/位置定位/加载SFSymbol图标).
@@ -62,6 +62,10 @@ Pod::Spec.new do |s|
       ss.source_files = 'SFServiceKit/Classes/SFSymbolManager/*'
   end
   
+  s.subspec 'IAP' do |ss|
+      ss.source_files = 'SFServiceKit/Classes/SFIAPManager/*'
+  end
+  
   s.subspec 'Full' do |ss|
       ss.dependency 'SFServiceKit/Bgtask'
       ss.dependency 'SFServiceKit/Display'
@@ -72,6 +76,7 @@ Pod::Spec.new do |s|
       ss.dependency 'SFServiceKit/Language'
       ss.dependency 'SFServiceKit/Location'
       ss.dependency 'SFServiceKit/Symbol'
+      ss.dependency 'SFServiceKit/IAP'
   end
   
 end

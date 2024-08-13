@@ -14,6 +14,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		8F024E63481C4C195D7025D9 /* Pods_SFServiceKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1612FD5101C80E542DE5E4F5 /* Pods_SFServiceKit_Example.framework */; };
+		AE0FC9732C61C2D70032E9F2 /* SFMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0FC9722C61C2D70032E9F2 /* SFMediator.swift */; };
 		CE72BC11FFA76559CFAFF7E2 /* Pods_SFServiceKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE9A5DC4B757FCB8D0359626 /* Pods_SFServiceKit_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		61AB06ECADD8FFD44FFC7317 /* Pods-SFServiceKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFServiceKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-SFServiceKit_Tests/Pods-SFServiceKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9011F847AE95D2B8E82104EC /* SFServiceKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SFServiceKit.podspec; path = ../SFServiceKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		98E3AEFC1CAEF1C80662C073 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		AE0FC9722C61C2D70032E9F2 /* SFMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFMediator.swift; sourceTree = "<group>"; };
 		DF6B90520631472A9EC8A804 /* Pods-SFServiceKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFServiceKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SFServiceKit_Tests/Pods-SFServiceKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E84E7EDC70D01FDA881E78F7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		EE9A5DC4B757FCB8D0359626 /* Pods_SFServiceKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SFServiceKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +117,7 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				AE0FC9722C61C2D70032E9F2 /* SFMediator.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -352,6 +355,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE0FC9732C61C2D70032E9F2 /* SFMediator.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
@@ -507,7 +511,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -524,7 +528,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

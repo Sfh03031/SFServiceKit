@@ -15,11 +15,13 @@ PODS:
     - SFServiceKit/Bgtask
     - SFServiceKit/Display
     - SFServiceKit/File
+    - SFServiceKit/IAP
     - SFServiceKit/IBeacon
     - SFServiceKit/Language
     - SFServiceKit/Location
     - SFServiceKit/Symbol
     - SFServiceKit/Timer
+  - SFServiceKit/IAP (0.1.5)
   - SFServiceKit/IBeacon (0.1.5)
   - SFServiceKit/Language (0.1.5)
   - SFServiceKit/Location (0.1.5)
@@ -40,7 +42,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  SFServiceKit: cc3f2eb31290ddef21eddc906ef30090b2465d3a
+  SFServiceKit: f4cfaede9b66bc0aaa797cedff7378c42d1d21d1
 
 PODFILE CHECKSUM: 28e8006c916709af5558b75ba327744a83fa69b1
 

@@ -71,15 +71,21 @@ pod 'SFServiceKit/Location'
 
 # 加载SF Symbol图标
 pod 'SFServiceKit/Symbol'
+
+# 内购
+pod 'SFServiceKit/IAP'
 ```
 
 or use subspecs, simply add the following line to your Podfile:
 
 ```swift
-pod 'SFServiceKit', :subspecs => ['Bgtask', 'Display', 'Author', 'File', 'Timer', 'IBeacon', 'Language', 'Location', 'Symbol']
+pod 'SFServiceKit', :subspecs => ['Bgtask', 'Display', 'Author', 'File', 'Timer', 'IBeacon', 'Language', 'Location', 'Symbol', 'IAP']
 ```
 
 ## Change log
+
+2024.08.13, 0.1.6
+- add iap manager(zh: 新增内购管理类)
 
 2024.07.31, 0.1.5
 - update podspec and optimized the subspecs(zh: 优化配置子库)

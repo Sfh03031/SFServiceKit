@@ -72,6 +72,10 @@
       "source_files": "SFServiceKit/Classes/SFSymbolManager/*"
     },
     {
+      "name": "IAP",
+      "source_files": "SFServiceKit/Classes/SFIAPManager/*"
+    },
+    {
       "name": "Full",
       "dependencies": {
         "SFServiceKit/Bgtask": [
@@ -99,6 +103,9 @@
 
         ],
         "SFServiceKit/Symbol": [
+
+        ],
+        "SFServiceKit/IAP": [
 
         ]
       }
