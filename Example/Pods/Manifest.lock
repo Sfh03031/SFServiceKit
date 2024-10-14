@@ -4,13 +4,13 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - SFServiceKit (0.1.5):
-    - SFServiceKit/Full (= 0.1.5)
-  - SFServiceKit/Author (0.1.5)
-  - SFServiceKit/Bgtask (0.1.5)
-  - SFServiceKit/Display (0.1.5)
-  - SFServiceKit/File (0.1.5)
-  - SFServiceKit/Full (0.1.5):
+  - SFServiceKit (0.1.7):
+    - SFServiceKit/Full (= 0.1.7)
+  - SFServiceKit/Author (0.1.7)
+  - SFServiceKit/Bgtask (0.1.7)
+  - SFServiceKit/Display (0.1.7)
+  - SFServiceKit/File (0.1.7)
+  - SFServiceKit/Full (0.1.7):
     - SFServiceKit/Author
     - SFServiceKit/Bgtask
     - SFServiceKit/Display
@@ -21,12 +21,12 @@ PODS:
     - SFServiceKit/Location
     - SFServiceKit/Symbol
     - SFServiceKit/Timer
-  - SFServiceKit/IAP (0.1.5)
-  - SFServiceKit/IBeacon (0.1.5)
-  - SFServiceKit/Language (0.1.5)
-  - SFServiceKit/Location (0.1.5)
-  - SFServiceKit/Symbol (0.1.5)
-  - SFServiceKit/Timer (0.1.5)
+  - SFServiceKit/IAP (0.1.7)
+  - SFServiceKit/IBeacon (0.1.7)
+  - SFServiceKit/Language (0.1.7)
+  - SFServiceKit/Location (0.1.7)
+  - SFServiceKit/Symbol (0.1.7)
+  - SFServiceKit/Timer (0.1.7)
 
 DEPENDENCIES:
   - FBSnapshotTestCase (~> 2.1.4)
@@ -42,7 +42,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  SFServiceKit: f4cfaede9b66bc0aaa797cedff7378c42d1d21d1
+  SFServiceKit: a1d3c0136065584cb07fa3b207be607d9316d581
 
 PODFILE CHECKSUM: 28e8006c916709af5558b75ba327744a83fa69b1
 

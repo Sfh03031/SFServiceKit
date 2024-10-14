@@ -8,10 +8,10 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SFServiceKit'
-  s.version          = '0.1.6'
+  s.version          = '0.1.7'
   s.summary          = 'Some collections of tool classes (zh: 一些工具类集合).'
   s.description      = <<-DESC
-  Some collections of tool classes (zh: 一些工具类集合: 后台保活/显示模式/身份验证/文件管理/GCD计时器/区域监测/语言管理/位置定位/加载SFSymbol图标).
+  Some collections of tool classes (zh: 一些工具类集合: 后台保活/显示模式/身份验证/文件管理/GCD计时器/区域监测/语言管理/位置定位/加载SFSymbol图标/IAP内购).
                        DESC
   s.homepage         = 'https://github.com/Sfh03031/SFServiceKit'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/Sfh03031/SFServiceKit.git', :tag => s.version.to_s }
   s.swift_versions   = '5.0'
   s.platform         = :ios, '10.0'
-  s.static_framework = true
+#  s.static_framework = true
   s.frameworks       = 'UIKit', 'Foundation', 'MapKit', 'LocalAuthentication', 'CoreLocation', 'AVFoundation'
   s.default_subspec  = 'Full'
   

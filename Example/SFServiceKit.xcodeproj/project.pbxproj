@@ -173,7 +173,7 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				A407947D8397F1F4B8B0A684 /* [CP] Copy Pods Resources */,
+				8381701B258C412F3CF0B863 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -286,22 +286,22 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SFServiceKit_Tests/Pods-SFServiceKit_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A407947D8397F1F4B8B0A684 /* [CP] Copy Pods Resources */ = {
+		8381701B258C412F3CF0B863 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SFServiceKit_Example/Pods-SFServiceKit_Example-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/SFServiceKit/Bgtask.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-SFServiceKit_Example/Pods-SFServiceKit_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SFServiceKit/SFServiceKit.framework",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Bgtask.bundle",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SFServiceKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SFServiceKit_Example/Pods-SFServiceKit_Example-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SFServiceKit_Example/Pods-SFServiceKit_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DB0681E782DF9907A3424148 /* [CP] Check Pods Manifest.lock */ = {

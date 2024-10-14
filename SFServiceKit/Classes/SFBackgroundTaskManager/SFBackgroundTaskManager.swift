@@ -121,7 +121,8 @@ public class SFBackgroundTaskManager: NSObject {
     
     /// 配置AVAudioPlayer
     fileprivate func setupAudioPlayer() {
-        let bundlePath = Bundle(for: self.classForCoder).path(forResource: "SFBackgroundTaskManager", ofType: "bundle")
+        // MARK: 与自身所在的bundle保持一致，否则会因找不到资源而崩溃，当前在子库Bgtask下
+        let bundlePath = Bundle(for: self.classForCoder).path(forResource: "Bgtask", ofType: "bundle")
         let bundle = Bundle(path: bundlePath ?? "")
         let filePath = bundle?.path(forResource: "Silence", ofType: "wav")
         let fileUrl = URL.init(fileURLWithPath: filePath ?? "")

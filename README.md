@@ -84,6 +84,9 @@ pod 'SFServiceKit', :subspecs => ['Bgtask', 'Display', 'Author', 'File', 'Timer'
 
 ## Change log
 
+2024.10.14, 0.1.7
+- fix bug(zh: 修复bug)
+
 2024.08.13, 0.1.6
 - add iap manager(zh: 新增内购管理类)
 
